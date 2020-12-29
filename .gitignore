@@ -1,0 +1,9 @@
+
+*.exe
+*.o
+Debug/*
+Release/*
+*.htm
+.vs/*
+Bubble-Insertion-Sort/Debug/*
+Bubble-Insertion-Sort/Release/*
