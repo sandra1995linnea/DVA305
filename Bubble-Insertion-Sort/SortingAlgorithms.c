@@ -26,18 +26,29 @@ void bubbleSortArray(ElementType* array, unsigned int size, Statistics *statisti
 			return;
 		}
 	}
-
-
 }
 
-void insertionSortArray(ElementType* array, Statistics *statistics)
+void insertionSortArray(ElementType* array, unsigned int size, Statistics *statistics)
 {
-
+	/*looping through the unsorted part of the array*/
+	for (int i = 1; i < size; i++)
+	{
+		int key = array[i];
+		/*looping through the sorted part of the array*/
+		for (int j = i-1; j >= 0; j--)
+		{
+			if (key >= array[j])
+			{
+				break;
+			}
+			swapElements(&(array[j + 1]), &(array[j]), statistics);
+		}
+	}
 }
 
 void bubbleSortList(List* list, Statistics *statistics)
 {
-	int swaps = 1;
+	int swaps = 1; // set to a nonzero number to ensure that we enter the while loop
 	while (swaps)
 	{
 		swaps = 0;
@@ -54,5 +65,9 @@ void bubbleSortList(List* list, Statistics *statistics)
 
 void inserionSortList(List* list, Statistics *statistics)
 {
+	for (struct node* pointer = *list; (pointer != NULL && pointer->next != NULL); pointer = pointer->next)
+	{
+
+	}
 
 }

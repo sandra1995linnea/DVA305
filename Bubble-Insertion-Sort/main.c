@@ -9,18 +9,20 @@ int main(void)
 	srand(time(NULL));
 	Statistics statistic;
 
-	/*const int NUMBER_OF_NUMBERS = 1000;
+	const int NUMBER_OF_NUMBERS = 1000;
 
 	ElementType* array = CreateArray(NUMBER_OF_NUMBERS);
 
-	bubbleSortArray(array, NUMBER_OF_NUMBERS, &statistic);
+	//bubbleSortArray(array, NUMBER_OF_NUMBERS, &statistic);
+
+	insertionSortArray(array, NUMBER_OF_NUMBERS, &statistic);
 
 	PrintArray(array, NUMBER_OF_NUMBERS); 
 	// TODO: print statistics!
 	// TODO: reset statistics!
-	*/
+	
 
-	List list = CreateEmptyList();
+	/*List list = CreateEmptyList();
 	
 	generateRandomNrToList(&list);
 
@@ -29,6 +31,6 @@ int main(void)
 	printList(list, stdout);
 	// TODO: print statistics!
 	// TODO: reset statistics!
-
+	*/
 	return 0;
 }
