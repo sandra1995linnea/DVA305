@@ -12,6 +12,8 @@ typedef struct statistics Statistics;
 
 void swapElements(int* element1, int* element2, Statistics* statistics);
 
-void printStatistics();
+void resetStatistics(Statistics* statistics);
+
+void printStatistics(const Statistics* statistics);
 
 #endif 

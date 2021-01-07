@@ -15,3 +15,19 @@ void swapElements(int *element1, int *element2, Statistics* statistics)
 	}
 }
 
+void resetStatistics(Statistics* statistics)
+{
+	assert(statistics != NULL);
+
+	statistics->comparsions = 0;
+	statistics->swaps = 0;
+}
+
+void printStatistics(const Statistics* statistics)
+{
+	assert(statistics != NULL);
+	
+
+	printf("%5u comparsions, %5u swaps", statistics->comparsions, statistics->swaps);
+}
+
